@@ -1,0 +1,365 @@
+* {box-sizing: border-box;}
+a {
+    color:white;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+	font-size: 20px;
+	line-height: 24px;
+	font-family:  "Tahoma", cursive, sans-serif;
+	color: #404040;
+  background-color: white;
+  min-width: 1040px;
+  margin: 0;
+  background: #f2f2f2;
+
+}
+
+footer{/* падвал */
+    width:100%;
+    height:100%;
+    background-color: #1C1C1C;
+    color:white;
+    border-radius: 1%;
+    display: flex;
+    align-items: center;
+    background-color:rgba(39, 48, 55);
+    margin-top: 0.1%;
+}
+
+footer p {/* падвал */
+    font-size: 100%;
+    color:white;
+    text-align: center;
+    padding-left: 22%;
+}
+
+
+/*Выпадающее меню*/
+
+/** {box-sizing: border-box;}*/
+/*body {
+  margin: 0;
+  background: #f2f2f2;
+}*/
+header {
+
+    width:100%;
+  height: 200px;
+    background-color: #1C1C1C;
+/*    color:white;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;*/
+    background-color:rgba(60,60,60,1);
+
+
+  background: white;
+  text-align: center;
+}
+header a {
+  display: block;
+  text-decoration: none;
+  outline: none;  
+  transition: .3s ease-in-out;
+}
+/*.logo {
+  color: #912CEE;*/    /*цвет*/
+/*  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  padding: 20px 0;
+}*/
+nav {
+  display: table;
+  padding-bottom:50em auto;
+  background: #273037;
+
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+.topmenu > li {
+  width: 25%;
+  float: left;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+.topmenu > li > a {
+  text-transform: uppercase;
+  font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  padding: 10px 30px;
+}
+.topmenu li a:hover {color: #912CEE;}/*цвет*/
+.submenu-link:after {
+  /*content: "\f107";*/
+  font-family: "FontAwesome";
+  color: inherit;
+  margin-left: 10px;
+}
+.submenu {
+  background: #273037;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 180px;
+  opacity: 0;
+    transform: scaleY(0);
+    transform-origin :0 0;
+  transition: .5s ease-in-out;
+}
+.submenu a {
+  color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li:last-child a {border-bottom: none;}
+.topmenu > li:hover .submenu {
+  opacity: 1;
+    transform: scaleY(1);
+}
+/* шапка */
+.page-header{
+	min-height: 150px;
+   /* padding-top: 35px;*/
+	background-color: #363636;
+    color: #FFF8DC;
+    background: url("im/sha4.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    margin:;
+}
+
+.header-top{
+ margin-bottom: ;   
+}
+
+.header-logo{
+    float: left;
+    width: 20%;
+    margin-right: 0%;
+    
+}
+
+.header-logo img{
+
+    width: 150%;
+    height: 250%;
+    margin-bottom: 0%;
+    margin: 0;
+    margin-left:-80%; /* двиг. карт. */
+ 
+}
+
+.main-nav{
+    list-style: none;
+    float: left;
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 55px;
+    margin-top: 20px;
+    color: black;
+    background-color: ;
+    margin-left: -2em;
+}
+
+.main-nav  li{
+    text-transform: uppercase;
+    float: left;
+    margin-right: -4px;
+    margin-bottom: 8px;
+   
+}
+
+.main-nav li:last-child{
+    margin-right: 0px;
+
+}
+
+.main-nav a{
+    color: white;
+    text-decoration:  none;
+    padding: 8px 20px;
+    color: #FFFFFF;
+    
+}
+
+.main-nav li:hover{
+    border-bottom: 2px solid white;
+   transition: 0.2s;
+}
+
+.main-nav a:active{
+     color: rgba(0, 0, 0, 0.5);
+}
+
+.promo{
+	font-family: "Georgia", serif;
+	font-size: 45px;
+	line-height: 55px;
+	font-weight: bold; 
+	text-align: center;
+}
+
+.promo a{
+	color: white;
+	text-decoration: none;
+   text-shadow: 2px 2px 2px #111111;
+
+}
+
+/*wraper*/
+.wraper{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 0 50% 0;
+    background-color: white;
+}
+
+.wrap{
+    padding: 1%;
+    color: gray;
+}
+
+
+
+
+
+/* отдельно */
+.container{
+    width: 1020px;
+    margin: 0 auto;
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.btn{
+  margin-left: 25%;
+    color: rgb( 85 26 139);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid rgb(  85 26 139);
+    padding: 10px;
+    word-wrap: break-word;
+    text-align: center;
+    font: inherit;
+    border-radius: 10px;
+    background: white;
+}
+
+.btn:hover{
+    color: #912CEE;
+    border-color: #912CEE;
+}
+.btn:active{
+    color: rgba(125 38 205,0.3);
+    border-color: #912CEE;
+}
+.btn-quick-order{
+  float: right;
+  margin-top: 6px;
+    border-color: white;
+    color: white;
+    border-radius: 10px;
+}
+.btn-quick-order:hover{
+    color: rgb(125 38 205);
+    background-color: white;
+    border-color: white;
+
+}
+.btn-quick-order:active{
+  color: rgba(125 38 205, 0.3);
+  border-color: white;
+  background-color: white;
+}
+
+/*рамка*/
+.ramka{
+    font-size: 16px;
+    float: left;
+    width: 262px;
+    box-shadow: 5px 5px 10px 2px rgba( 85, 26, 139, 0.7);
+    position: relative;
+    border-radius: 5px;
+    /*padding-top: 10%;*/
+    margin-left: 25%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+
+
+
+
+/* кнопки подвала вк инст. фейс. */
+.social-btn{
+    color: #7D26CD;
+    text-decoration: none;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    border: 50px solid rgba(85 26 139, 0.1);
+     font-size: 0;
+}
+
+
+.vkk{
+    margin-left: 1%;
+
+}
+.in{
+margin-left: 1%;
+}
+
+.fei{
+    margin-left: 1%;
+}
+b{
+
+    color: red;
+    padding-left: 10%;
+}
+.b{
+color: white;
+}
+
+.vkk:hover{
+    color: #1E90FF;
+
+}
+.in:hover{
+    color: #FFD700;
+}
+
+.fei:hover{
+    color: #1E90FF;
+}
+
